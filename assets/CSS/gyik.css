@@ -1,0 +1,25 @@
+body {
+    background-color: chartreuse;
+}
+
+.kocka {
+    display: inline-block;
+    box-sizing: border-box;
+    background: linear-gradient(to right, grey , white );
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: hidden;
+    box-shadow:87px -5px 132px 0px white;
+    border-radius: 50%;
+    position: absolute;
+    top:120px;
+    left:50px;
+    color: white;
+}
+
+p {
+    box-sizing: border-box;
+    margin:35px;
+    padding: 20px;
+}

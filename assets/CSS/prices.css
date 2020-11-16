@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  background: linear-gradient(238deg, rgba(255,136,0,1) 20%, rgba(112,181,12,1) 48%, rgba(181,176,12,1) 75%);
+  color: black;
+  min-height: 100%;
+  margin:0 auto;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav {
+  position: fixed;
+  top:0;
+  width: 100%;
+  display: flex; 
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background:black;
+  padding:15px;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav-ul li a {
+  display: inline-block;
+  color:#f3982a;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 3.4vh;
+  font-weight: 600;
+  transition: all;
+}
+
+.nav-ul li a:hover {
+  text-decoration: underline;
+  transition: 500ms ease-in-out;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: 0;
+  display: none;
+  color:#f3982a;
+  font-size:20px;
+  cursor: pointer;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+.services-section {
+  margin-top:130px;
+}
+
+.headingh2 {
+    font-family: 'Lobster', cursive; 
+    font-size: 40px;
+    color: #556b2f;
+    text-shadow: 2px 2px #f3982a;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding-top:10px;
+    margin-bottom: 25px;
+}
+
+  table {
+    width: 980px;
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: rgba(255,255,255,0.3);
+    table-layout: auto;
+    box-sizing: content-box;
+}
+
+  .tbl-content{
+    margin-top: 0px;
+    box-sizing: content-box;
+}
+
+  th{
+    padding: 15px 15px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    color:black;
+    box-sizing: content-box;
+}
+
+  .tbl-width {
+    word-wrap: break-word;
+    max-width:180px;
+    box-sizing: content-box;
+}
+  
+  td {
+    text-align: left;
+    vertical-align:middle;
+    font-weight: 300;
+    font-size: 20px;
+    color: black;
+}
+  
+  tr:nth-child(odd) {
+    background-color: #e9e5dc;
+}
+
+  tr:hover {
+    background-color:white;
+}
+
+  .period {
+    box-sizing: content-box;
+    max-width:130px;
+    padding: 0;
+}
+
+  section {
+    margin: 50px;
+}
+  
+  .price-info {
+    margin-top: 40px;
+    padding: 10px;
+    clear: left;
+    text-align: center;
+    font-size: 3.5vh;
+    color: #F50057;
+    font-family: 'Lobster', cursive;
+}
+  
+@media screen and (max-width:767px) {
+  .nav-ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-ul.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+ .nav-ul li a {
+   padding:10px;
+ }
+}
+ 
+
+  
+  

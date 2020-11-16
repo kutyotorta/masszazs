@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    /*font color setting*/
+    --font-color:#5C5A51;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*background: linear-gradient(238deg, rgba(255,136,0,1) 20%, rgba(112,181,12,1) 48%, rgba(181,176,12,1) 75%)*/
+
+body {
+    background-image: url("../PICT/background_info.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 22px;
+    height: 100%;
+    width: 100%;
+    margin:0 auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 2rem;
+}
+
+.nav {
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background:black;
+    padding:15px;
+  }
+  
+  .nav-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .nav-ul li a {
+    display: inline-block;
+    color:#f3982a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 3.4vh;
+    font-weight: 600;
+    transition: all;
+  }
+  
+  .nav-ul li a:hover {
+    text-decoration: underline;
+    transition: 500ms ease-in-out;
+  }
+  
+  .hamburger {
+    background-color: transparent;
+    border: 0;
+    display: none;
+    color:#f3982a;
+    font-size:20px;
+    cursor: pointer;
+  }
+  
+  .hamburger:focus {
+    outline: none;
+  }
+
+.wrap {
+    margin:0 60px;
+    padding-top:120px ;
+}
+
+.title {
+    font-size: 3.2rem;
+    color: #f3982a;
+    font-family: 'Lobster', cursive; 
+    text-shadow: 2px 2px #556B2F;
+    font-style: italic;
+}
+
+.content-text {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, .8)
+}
+
+@media screen and (max-width:767px) {
+    .nav-ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-ul.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  
+   .nav-ul li a {
+     padding:10px;
+   }
+  }
+   
